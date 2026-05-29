@@ -189,6 +189,13 @@ nav {
   flex-shrink: 0;
 }
 
+.app-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
 .app-icon svg {
   width: 28px;
   height: 28px;
@@ -251,6 +258,30 @@ nav {
 
 .pill-play:hover { opacity: 0.85; color: var(--green); }
 
+/* STATUS BADGES */
+.status-badge {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.status-testing {
+  background: var(--green-light);
+  color: var(--green);
+}
+
+.status-dev {
+  background: #faeeda;
+  color: #854f0b;
+}
+
+[data-theme="dark"] .status-dev {
+  background: #2e2215;
+  color: #e0a336;
+}
+
 /* ABOUT */
 .about-card {
   background: var(--surface);
@@ -294,6 +325,57 @@ footer p {
 }
 
 .footer-links a:hover { color: var(--text); }
+
+/* PRIVACY POLICY PAGE */
+.privacy-page {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.privacy-page h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.privacy-page .last-updated {
+  font-family: 'DM Mono', monospace;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+.privacy-page h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.75rem 0 0.5rem;
+}
+
+.privacy-page p,
+.privacy-page li {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-page ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.privacy-page .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  transition: opacity 0.15s;
+}
+
+.privacy-page .back-link:hover { opacity: 0.7; }
 
 /* RESPONSIVE */
 @media (max-width: 540px) {
